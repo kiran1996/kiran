@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: Countries_staging
+    description: "Population by area adding to the model"
+    columns:
+      - name: name
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: capital
+        description: "Capital of the country"
+      - name: region
+        description: "Which region does the country belongs to"
+      - name: population
+        description: "Population of the country"
+      - name: area
+        description: "Area of the country in square meter"
+      - name: population_density
+        description: "Density of how many people are there in each square meter"

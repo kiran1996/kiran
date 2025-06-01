@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: COUNTRIES_LANDING             # Source name used in `{{ source('my_first_dbt_model', 'table_name') }}`
+    database: API_LANDING_ZONE          # Change to your actual Snowflake database
+    schema: LANDING_REST_COUNTRIES           # Schema where source tables are stored
+    tables:
+      - name: COUNTRIES
